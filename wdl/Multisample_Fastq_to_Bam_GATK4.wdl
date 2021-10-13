@@ -84,14 +84,14 @@ workflow Multisample_Fastq_to_Bam_GATK4 {
   # Outputs that will be retained when execution is complete  
   output {
     #Array[Array[File]] unmapped_bam = Fastq_to_Gvcf_GATK4.unmapped_bam
-    Array[File] duplication_metrics = Fastq_to_Gvcf_GATK4.duplication_metrics
-    Array[File] bqsr_report = Fastq_to_Gvcf_GATK4.bqsr_report
+    #Array[File] duplication_metrics = Fastq_to_Gvcf_GATK4.duplication_metrics
+    #Array[File] bqsr_report = Fastq_to_Gvcf_GATK4.bqsr_report
     Array[File] analysis_ready_bam = Fastq_to_Gvcf_GATK4.analysis_ready_bam
     Array[File] analysis_ready_bam_index = Fastq_to_Gvcf_GATK4.analysis_ready_bam_index
     Array[File] analysis_ready_bam_md5 = Fastq_to_Gvcf_GATK4.analysis_ready_bam_md5
-    Array[File] output_vcf = Fastq_to_Gvcf_GATK4.output_vcf
-    Array[File] output_vcf_index = Fastq_to_Gvcf_GATK4.output_vcf_index
-    File uniq_samples = make_uniq_samples_file.uniq_samples_file
+    #Array[File] output_vcf = Fastq_to_Gvcf_GATK4.output_vcf
+    #Array[File] output_vcf_index = Fastq_to_Gvcf_GATK4.output_vcf_index
+    #File uniq_samples = make_uniq_samples_file.uniq_samples_file
   } 
 
 
